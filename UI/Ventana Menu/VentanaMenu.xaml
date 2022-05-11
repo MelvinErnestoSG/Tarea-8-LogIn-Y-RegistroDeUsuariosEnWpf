@@ -1,0 +1,26 @@
+﻿<Window x:Class="Tarea_8_LogIn_y_RegistroDeUsuariosEnWpf.UI.Ventana_Menu.VentanaMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tarea_8_LogIn_y_RegistroDeUsuariosEnWpf.UI.Ventana_Menu"
+        mc:Ignorable="d"
+        Title="Ventana Menu" Height="200" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel>
+            
+            <Menu Height="20">
+                <MenuItem Header="Registros">
+                    <MenuItem x:Name="RegistroUsuariosMenuItem" Header="Registro de Usuarios" Click="RegistroUsuariosMenuItem_Click"/>
+                </MenuItem>
+                
+                <MenuItem Header="Consultas">
+                    <MenuItem x:Name="ConsultaUsuarioMenuItem" Header="Consulta de Usuarios" Click="ConsultaUsuarioMenuItem_Click"/>
+                </MenuItem>
+
+                <MenuItem Header="Ayuda"></MenuItem>
+                
+            </Menu>
+        </StackPanel>
+    </Grid>
+</Window>
