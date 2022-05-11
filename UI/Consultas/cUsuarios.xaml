@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tarea_8_LogIn_y_RegistroDeUsuariosEnWpf.UI.Consultas"
         mc:Ignorable="d"
-       Title="Consulta De Usuarios" Height="433" Width="652" WindowStartupLocation="CenterScreen">
-    <Grid Margin="10">
+        Title="Consulta De Usuarios" Height="420" Width="637" WindowStartupLocation="CenterScreen">
+    <Grid>
         <StackPanel>
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Height="60">
+            <StackPanel Orientation="Horizontal" Margin="5,0" HorizontalAlignment="Left" Height="60">
                 <StackPanel>
                     <Label Content="Desde:"/>
                     <DatePicker x:Name="DesdeDatePicker" SelectedDateFormat="Short"/>
@@ -40,8 +40,8 @@
                 </Button>
 
             </StackPanel>
-            <StackPanel HorizontalAlignment="Left" >
-                <DataGrid x:Name="DatosDataGrid" Height="312" Width="708" AutoGenerateColumns="False">
+            <StackPanel HorizontalAlignment="Left" Margin="5">
+                <DataGrid x:Name="DatosDataGrid" Height="310" Width="611" AutoGenerateColumns="False">
                     <DataGrid.Columns>
                        <DataGridTextColumn Header="Usuario Id" Binding="{Binding UsuarioId}" Width="100"/>
                         <DataGridTextColumn Header="Nombres" Binding="{Binding Nombres}" Width="100"/>
