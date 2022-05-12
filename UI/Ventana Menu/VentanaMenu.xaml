@@ -18,8 +18,9 @@
                     <MenuItem x:Name="ConsultaUsuarioMenuItem" Header="Consulta de Usuarios" Click="ConsultaUsuarioMenuItem_Click"/>
                 </MenuItem>
 
-                <MenuItem Header="Ayuda"></MenuItem>
-                
+                <MenuItem Header="Ayuda">
+                    <MenuItem x:Name="AyudaMenuItem" Header="Ayuda para Usuarios" Click="AyudaMenuItem_Click"/>
+                </MenuItem>
             </Menu>
         </StackPanel>
     </Grid>

@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Tarea_8_LogIn_y_RegistroDeUsuariosEnWpf"
         mc:Ignorable="d"
         Title="Ventana LogIn" Height="325" Width="293" WindowStartupLocation="CenterScreen">
-    <Grid Margin="10">
+    <Grid>
         
         <StackPanel>
 
@@ -15,19 +15,19 @@
             </StackPanel>
 
             <StackPanel>
-                <StackPanel Orientation="Horizontal" Margin="0,5">
+                <StackPanel Orientation="Horizontal" Margin="5,0">
                     <Image Source="/Resources/usuario.png" Width="15" HorizontalAlignment="Left"/>
                     <Label Content="Nombre Usuario"/>
                 </StackPanel>
       
-                <TextBox x:Name="NombreUsuarioTextBox" Text="{Binding NombreUsuario}" Width="250" HorizontalAlignment="Left"/>
+                <TextBox x:Name="NombreUsuarioTextBox" Margin="5,0" Text="{Binding NombreUsuario}" Width="250" HorizontalAlignment="Left"/>
 
-                <StackPanel Orientation="Horizontal" Margin="0,5">
+                <StackPanel Orientation="Horizontal" Margin="5,0">
                     <Image Source="/Resources/contrasena.png" Width="15" HorizontalAlignment="Left"/>
                     <Label Content="Contraseña"/>
                 </StackPanel>
               
-                <PasswordBox x:Name="ContrasenaPasswordBox" Width="250" HorizontalAlignment="Left"/>
+                <PasswordBox x:Name="ContrasenaPasswordBox" Margin="5,0" Width="250" HorizontalAlignment="Left"/>
 
                 <StackPanel Orientation="Horizontal" Margin="5,10" HorizontalAlignment="Center">
                     <Button x:Name="IniciarButton" Margin="5,0" Click="IniciarButton_Click">
